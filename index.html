@@ -1,11 +1,370 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FlameBite - Burger & Fries Nóng Hổi</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>le minh kien tuong</h1>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="brand-flame">🔥</span>
+                <span class="brand-text">FlameBite</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Thực Đơn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Về Chúng Tôi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#locations">Địa Điểm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary ms-lg-3" href="#order">Đặt Ngay</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-badge">Mới Ra Mắt</div>
+                    <h1 class="hero-title">
+                        Burger & Fries<br>
+                        <span class="text-gradient">Nóng Hổi</span><br>
+                        Mỗi Ngày
+                    </h1>
+                    <p class="hero-description">
+                        Trải nghiệm hương vị đỉnh cao với burger được nướng hoàn hảo và khoai tây chiên giòn rụm. Giao hàng nhanh chóng, luôn nóng hổi khi đến tay bạn.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#order" class="btn btn-primary btn-lg">Đặt Hàng Ngay</a>
+                        <a href="#menu" class="btn btn-outline-light btn-lg">Xem Thực Đơn</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">15 phút</div>
+                            <div class="stat-label">Giao hàng trung bình</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50K+</div>
+                            <div class="stat-label">Khách hàng hài lòng</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">4.9★</div>
+                            <div class="stat-label">Đánh giá trung bình</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <img src="/placeholder.svg?height=600&width=600" alt="FlameBite Burger" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Thực Đơn Đặc Biệt</h2>
+                <p class="section-subtitle">Những món ăn được yêu thích nhất tại FlameBite</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-card-badge">Best Seller</div>
+                        <div class="menu-card-image">
+                            <img src="/placeholder.svg?height=400&width=400" alt="Classic Flame Burger" class="img-fluid">
+                        </div>
+                        <div class="menu-card-content">
+                            <h3 class="menu-card-title">Classic Flame Burger</h3>
+                            <p class="menu-card-description">Burger bò nướng hoàn hảo, phô mai tan chảy, rau tươi và sốt đặc biệt</p>
+                            <div class="menu-card-footer">
+                                <span class="menu-card-price">89.000đ</span>
+                                <button class="btn btn-primary btn-sm">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-card-badge hot-badge">🔥 Hot</div>
+                        <div class="menu-card-image">
+                            <img src="/placeholder.svg?height=400&width=400" alt="Double Inferno Burger" class="img-fluid">
+                        </div>
+                        <div class="menu-card-content">
+                            <h3 class="menu-card-title">Double Inferno Burger</h3>
+                            <p class="menu-card-description">Burger bò đôi cay nồng với ớt jalapeño và sốt đặc chế</p>
+                            <div class="menu-card-footer">
+                                <span class="menu-card-price">129.000đ</span>
+                                <button class="btn btn-primary btn-sm">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-card-image">
+                            <img src="/placeholder.svg?height=400&width=400" alt="Crispy Fries" class="img-fluid">
+                        </div>
+                        <div class="menu-card-content">
+                            <h3 class="menu-card-title">Crispy Fries</h3>
+                            <p class="menu-card-description">Khoai tây chiên giòn rụm, vàng ươm với muối biển đặc biệt</p>
+                            <div class="menu-card-footer">
+                                <span class="menu-card-price">39.000đ</span>
+                                <button class="btn btn-primary btn-sm">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-card-image">
+                            <img src="/placeholder.svg?height=400&width=400" alt="Crispy Chicken Burger" class="img-fluid">
+                        </div>
+                        <div class="menu-card-content">
+                            <h3 class="menu-card-title">Crispy Chicken Burger</h3>
+                            <p class="menu-card-description">Gà giòn rụm với salad bắp cải và sốt mayonnaise đặc biệt</p>
+                            <div class="menu-card-footer">
+                                <span class="menu-card-price">79.000đ</span>
+                                <button class="btn btn-primary btn-sm">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-card-badge">Combo</div>
+                        <div class="menu-card-image">
+                            <img src="/placeholder.svg?height=400&width=400" alt="Flame Combo" class="img-fluid">
+                        </div>
+                        <div class="menu-card-content">
+                            <h3 class="menu-card-title">Flame Combo</h3>
+                            <p class="menu-card-description">Burger + Fries + Nước ngọt - Tiết kiệm 20%</p>
+                            <div class="menu-card-footer">
+                                <span class="menu-card-price">119.000đ</span>
+                                <button class="btn btn-primary btn-sm">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-card-image">
+                            <img src="/placeholder.svg?height=400&width=400" alt="Loaded Fries" class="img-fluid">
+                        </div>
+                        <div class="menu-card-content">
+                            <h3 class="menu-card-title">Loaded Fries</h3>
+                            <p class="menu-card-description">Khoai tây chiên phủ phô mai, bacon và hành lá</p>
+                            <div class="menu-card-footer">
+                                <span class="menu-card-price">59.000đ</span>
+                                <button class="btn btn-primary btn-sm">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="/placeholder.svg?height=600&width=600" alt="FlameBite Kitchen" class="img-fluid rounded-4">
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <span class="about-label">Về FlameBite</span>
+                        <h2 class="about-title">Đam mê tạo nên<br>hương vị hoàn hảo</h2>
+                        <p class="about-text">
+                            Tại FlameBite, chúng tôi tin rằng một chiếc burger tuyệt vời bắt đầu từ những nguyên liệu tươi ngon nhất. Mỗi burger được nướng trên lửa thực sự, tạo nên lớp vỏ ngoài giòn rụm và giữ trọn hương vị bên trong.
+                        </p>
+                        <p class="about-text">
+                            Khoai tây của chúng tôi được cắt tươi mỗi ngày và chiên hai lần để đạt độ giòn hoàn hảo. Chúng tôi cam kết mang đến cho bạn những món ăn nóng hổi, ngon miệng trong thời gian nhanh nhất.
+                        </p>
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">🥩</div>
+                                <div class="feature-content">
+                                    <h4>100% Thịt Bò Tươi</h4>
+                                    <p>Không chất bảo quản, không đông lạnh</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">🔥</div>
+                                <div class="feature-content">
+                                    <h4>Nướng Trên Lửa Thực</h4>
+                                    <p>Hương vị đặc trưng không thể nhầm lẫn</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">⚡</div>
+                                <div class="feature-content">
+                                    <h4>Giao Hàng Siêu Tốc</h4>
+                                    <p>Trung bình 15 phút, luôn nóng hổi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section id="locations" class="locations-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Địa Điểm Của Chúng Tôi</h2>
+                <p class="section-subtitle">Ghé thăm FlameBite gần bạn nhất</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="location-card">
+                        <h3 class="location-name">Quận 1</h3>
+                        <p class="location-address">123 Nguyễn Huệ<br>Quận 1, TP.HCM</p>
+                        <p class="location-hours">Mở cửa: 10:00 - 22:00</p>
+                        <a href="#" class="location-link">Xem bản đồ →</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="location-card">
+                        <h3 class="location-name">Quận 3</h3>
+                        <p class="location-address">456 Võ Văn Tần<br>Quận 3, TP.HCM</p>
+                        <p class="location-hours">Mở cửa: 10:00 - 22:00</p>
+                        <a href="#" class="location-link">Xem bản đồ →</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="location-card">
+                        <h3 class="location-name">Quận 7</h3>
+                        <p class="location-address">789 Nguyễn Văn Linh<br>Quận 7, TP.HCM</p>
+                        <p class="location-hours">Mở cửa: 10:00 - 23:00</p>
+                        <a href="#" class="location-link">Xem bản đồ →</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="location-card">
+                        <h3 class="location-name">Bình Thạnh</h3>
+                        <p class="location-address">321 Điện Biên Phủ<br>Bình Thạnh, TP.HCM</p>
+                        <p class="location-hours">Mở cửa: 10:00 - 22:00</p>
+                        <a href="#" class="location-link">Xem bản đồ →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="order" class="cta-section">
+        <div class="container">
+            <div class="cta-content text-center">
+                <h2 class="cta-title">Đói bụng rồi?<br>Đặt ngay thôi!</h2>
+                <p class="cta-description">Giao hàng nhanh chóng trong 15 phút. Luôn nóng hổi khi đến tay bạn.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary btn-lg">Đặt Hàng Trực Tuyến</a>
+                    <a href="tel:1900xxxx" class="btn btn-outline-light btn-lg">Gọi: 1900 xxxx</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="footer-brand">
+                        <span class="brand-flame">🔥</span>
+                        <span class="brand-text">FlameBite</span>
+                    </div>
+                    <p class="footer-description">
+                        Burger & Fries nóng hổi được làm từ nguyên liệu tươi ngon nhất. Giao hàng nhanh chóng, phục vụ tận tâm.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">TikTok</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6 mb-4 mb-lg-0">
+                    <h4 class="footer-title">Thực Đơn</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Burgers</a></li>
+                        <li><a href="#">Fries</a></li>
+                        <li><a href="#">Combos</a></li>
+                        <li><a href="#">Đồ Uống</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6 mb-4 mb-lg-0">
+                    <h4 class="footer-title">Công Ty</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Về Chúng Tôi</a></li>
+                        <li><a href="#">Tuyển Dụng</a></li>
+                        <li><a href="#">Tin Tức</a></li>
+                        <li><a href="#">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6 mb-4 mb-lg-0">
+                    <h4 class="footer-title">Hỗ Trợ</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Chính Sách</a></li>
+                        <li><a href="#">Điều Khoản</a></li>
+                        <li><a href="#">Bảo Mật</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h4 class="footer-title">Liên Hệ</h4>
+                    <ul class="footer-links">
+                        <li>1900 xxxx</li>
+                        <li>hello@flamebite.vn</li>
+                        <li>TP. Hồ Chí Minh</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FlameBite. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
