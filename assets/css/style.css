@@ -92,9 +92,9 @@ a {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
-  color: var(--color-white);
-  box-shadow: 0 4px 15px rgba(255, 77, 0, 0.3);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    color: var(--color-white);
+    box-shadow: 0 4px 15px rgba(255, 77, 0, 0.3);
 }
 
 .btn-primary:hover {
@@ -126,6 +126,10 @@ a {
 }
 
 /* ===== Hero Section ===== */
+.box {
+    padding-top: 50px;
+}
+
 .hero {
     padding-top: 80px;
     background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-light) 100%);
