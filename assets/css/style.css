@@ -649,3 +649,7 @@ a {
         font-size: 1rem;
     }
 }
+
+#logo {
+    border-radius: 50%;
+}
