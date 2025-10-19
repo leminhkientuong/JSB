@@ -799,4 +799,7 @@ transition: var(--transition);
     }
 }
 
-
+/* Add smooth scroll behavior to html element */
+html {
+    scroll-behavior: smooth;
+}
