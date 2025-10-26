@@ -798,8 +798,3 @@ transition: var(--transition);
         font-size: 1rem;
     }
 }
-
-/* Add smooth scroll behavior to html element */
-html {
-    scroll-behavior: smooth;
-}
