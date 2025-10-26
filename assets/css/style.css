@@ -798,3 +798,275 @@ transition: var(--transition);
         font-size: 1rem;
     }
 }
+
+/* ===== Body ===== */
+body {
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Login Card ===== */
+.login-card {
+    background: #111;
+    border-radius: 20px;
+    padding: 3rem 2.5rem;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 420px;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.login-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 50px rgba(255, 77, 0, 0.15);
+}
+
+/* ===== Logo & Title ===== */
+.login-logo {
+    width: 70px;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.login-title {
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(135deg, #ff4d00, #ffb800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ===== Form ===== */
+.form-control {
+    background: #1a1a1a;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-radius: 50px;
+    padding: 0.75rem 1rem;
+}
+
+.form-control:focus {
+    border-color: #ff4d00;
+    box-shadow: 0 0 0 0.2rem rgba(255, 77, 0, 0.25);
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+/* ===== Button ===== */
+.btn-primary {
+    background: linear-gradient(135deg, #ff4d00, #e64500);
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    padding: 0.75rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #e64500, #ff4d00);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(255, 77, 0, 0.4);
+}
+
+/* ===== Text Links ===== */
+.text-muted a {
+    color: #ffb800;
+    text-decoration: none;
+}
+
+.text-muted a:hover {
+    text-decoration: underline;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .login-card {
+        padding: 2.5rem 1.5rem;
+        margin: 1rem;
+    }
+
+    .login-title {
+        font-size: 1.6rem;
+    }
+
+    .form-control {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .login-card {
+        padding: 2rem 1.25rem;
+        margin: 0.5rem;
+        border-radius: 15px;
+    }
+
+    .login-title {
+        font-size: 1.4rem;
+    }
+
+    .btn-primary {
+        font-size: 1rem;
+        padding: 0.6rem 1.5rem;
+    }
+
+    .form-control {
+        font-size: 0.9rem;
+    }
+}
+
+/* ===== Body ===== */
+body {
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Register Card ===== */
+.register-card {
+    background: #111;
+    border-radius: 20px;
+    padding: 3rem 2.5rem;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 480px;
+    transition: all 0.3s ease;
+}
+
+.register-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 50px rgba(255, 77, 0, 0.15);
+}
+
+/* ===== Logo & Title ===== */
+.register-logo {
+    width: 70px;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.register-title {
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(135deg, #ff4d00, #ffb800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ===== Form ===== */
+.form-control {
+    background: #1a1a1a;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-radius: 50px;
+    padding: 0.75rem 1rem;
+}
+
+.form-control:focus {
+    border-color: #ff4d00;
+    box-shadow: 0 0 0 0.2rem rgba(255, 77, 0, 0.25);
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+.form-check-label a {
+    color: #ffb800;
+    text-decoration: none;
+}
+
+.form-check-label a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Button ===== */
+.btn-primary {
+    background: linear-gradient(135deg, #ff4d00, #e64500);
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    padding: 0.75rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #e64500, #ff4d00);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(255, 77, 0, 0.4);
+}
+
+/* ===== Footer Text ===== */
+.footer-text {
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-text a {
+    color: #ffb800;
+    text-decoration: none;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .register-card {
+        padding: 2.5rem 1.5rem;
+        margin: 1rem;
+    }
+
+    .register-title {
+        font-size: 1.6rem;
+    }
+
+    .form-control {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .register-card {
+        padding: 2rem 1.25rem;
+        margin: 0.5rem;
+        border-radius: 15px;
+    }
+
+    .register-title {
+        font-size: 1.4rem;
+    }
+
+    .btn-primary {
+        font-size: 1rem;
+        padding: 0.6rem 1.5rem;
+    }
+
+    .form-control {
+        font-size: 0.9rem;
+    }
+}
