@@ -963,31 +963,3 @@ body {
         font-size: 0.9rem;
     }
 }
-
-
-/* ===== Fix autofill & placeholder color (Safari, Chrome, Firefox) ===== */
-
-/* Giữ màu chữ và placeholder sáng */
-input:-webkit-autofill,
-input:-webkit-autofill:focus {
-    -webkit-text-fill-color: #f5f5f5 !important;
-    transition: background-color 5000s ease-in-out 0s;
-    box-shadow: 0 0 0px 1000px #1c1c1c inset !important; /* giữ nền tối */
-}
-
-/* Placeholder sáng rõ, không đổi màu khi focus */
-::placeholder {
-    color: rgba(255, 255, 255, 0.7) !important;
-    opacity: 1;
-}
-
-input:focus::placeholder {
-    color: rgba(255, 255, 255, 0.5) !important;
-}
-
-/* Safari autofill password field background fix */
-input[type="password"]:-webkit-autofill {
-    background-color: #1c1c1c !important;
-    -webkit-box-shadow: 0 0 0px 1000px #1c1c1c inset !important;
-    -webkit-text-fill-color: #f5f5f5 !important;
-}
