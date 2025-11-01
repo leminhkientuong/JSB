@@ -352,10 +352,6 @@ a {
     min-width: 250px;
 }
 
-.gallery-item-large {
-  /* removed grid column span */
-}
-
 .gallery-image {
     width: 100%;
     height: 100%;
